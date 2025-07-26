@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+         button {
+            border: 1px solid blue;
+            background-color: lightpink;
+            padding:5px;
+            border:2px solid lightblue;
+            display:inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h2> The total number of users are: <%= userCount %></h2>
+    <form method="get" action="/add_user">
+ 
+    <button>Join us</button>
+
+    </form>
+    <br/>
+    <form method="get" action="/user">
+ 
+    <button>Users</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <style>
+        label{
+            background-color: lightpink;
+            border: 1px solid blue;
+         
+        }
+    </style>
+</head>
+<body>
+
+    <h2> ADD NEW USER</h2>
+    <form method="post" action="/add_new_user">
+
+        <label>ID</label>
+        <input type="" name="id" placeholder="id"  value="<%= newUser[0] %>" />
+        <br/><br/>
+        
+
+        <label>USERNAME</label>
+        <input type="text" name="username" placeholder="username"  value="<%= newUser[1] %>" />
+        <br/><br/>
+        
+        <label>E-MAIL</label>
+        <input type="text" name="email" placeholder="email"  value="<%= newUser[2] %>" />
+        <br/><br/>
+        
+        <label>PASSWORD</label>
+        <input type="password" name="password" placeholder="password" value="<%= newUser[3] %>" />
+        <br/> <br/>
+        <button>SUBMIT</button>
+    </form>
+    
+</body>
+</html>

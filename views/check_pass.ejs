@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT USERNAME</title>
+    <style>
+        tr, th, td{
+            border: 1px solid blue;
+            background-color: lightpink;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>EDIT YOUR PROFILE</h2>
+    <h3>Enter password to proceed</h3>
+    <form method="post" action="/user/<%= user.id %>/edit_id" >
+        <input name="password" type ="password" placeholder="enter password"/>
+        <button>submit</button>
+    </form>
+    <!-- <table>
+        <tr>
+              <th>ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </table> -->
+
+    
+</body>
+</html>
